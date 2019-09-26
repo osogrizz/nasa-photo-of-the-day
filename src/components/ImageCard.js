@@ -2,6 +2,9 @@ import React from 'react';
 
 const ImageCard = (props) => {
     console.log('props', props);
+    if (!props.imgData) {
+      return <h3>Loading...</h3>
+    } 
   return (
     <div>
       <h2>{props.imgData.title}</h2>
