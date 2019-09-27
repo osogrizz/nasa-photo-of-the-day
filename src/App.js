@@ -36,8 +36,8 @@ function App() {
 
   return (
     <div className="App">
-      <input type="date" onChange={handleDate}/>
-      <ImageCard imgData={images} />
+      
+      <ImageCard imgData={images} handleDate={handleDate} />
     </div>
   );
 }
